@@ -1,0 +1,69 @@
+{
+  "CSE": {
+    "cse101": {
+      "registered": false
+    },
+    "cse102": {
+      "registered": true
+    },
+    "cse103": {
+      "registered": false
+    },
+    "cse104": {
+      "registered": false
+    },
+    "cse105": {
+      "registered": true
+    }
+  },
+  "ECE": {
+    "ece101": {
+      "registered": false
+    },
+    "ece102": {
+      "registered": false
+    },
+    "ece105": {
+      "registered": false
+    },
+    "ece108": {
+      "registered": true
+    },
+    "ece110": {
+      "registered": false
+    }
+  },
+  "MECH": {
+    "mech101": {
+      "registered": false
+    },
+    "mech102": {
+      "registered": true
+    },
+    "mech103": {
+      "registered": false
+    }
+  },
+  "CIVIL": {
+    "civil101": {
+      "registered": false
+    },
+    "civil102": {
+      "registered": false
+    },
+    "civil103": {
+      "registered": true
+    }
+  },
+  "EEE": {
+    "eee101": {
+      "registered": false
+    },
+    "eee102": {
+      "registered": false
+    },
+    "eee103": {
+      "registered": true
+    }
+  }
+}

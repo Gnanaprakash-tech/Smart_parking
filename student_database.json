@@ -1,0 +1,84 @@
+{
+  "CSE": {
+    "cse21001": {
+      "registered": false
+    },
+    "cse21002": {
+      "registered": true
+    },
+    "cse21003": {
+      "registered": false
+    },
+    "cse21004": {
+      "registered": false
+    },
+    "cse21005": {
+      "registered": true
+    },
+    "cse22001": {
+      "registered": false
+    },
+    "cse22002": {
+      "registered": false
+    }
+  },
+  "ECE": {
+    "ece21001": {
+      "registered": false
+    },
+    "ece21002": {
+      "registered": false
+    },
+    "ece21003": {
+      "registered": true
+    },
+    "ece22001": {
+      "registered": false
+    },
+    "ece22002": {
+      "registered": false
+    }
+  },
+  "MECH": {
+    "mech21001": {
+      "registered": false
+    },
+    "mech21002": {
+      "registered": true
+    },
+    "mech21003": {
+      "registered": false
+    },
+    "mech22001": {
+      "registered": false
+    }
+  },
+  "CIVIL": {
+    "civil21001": {
+      "registered": false
+    },
+    "civil21002": {
+      "registered": false
+    },
+    "civil21003": {
+      "registered": true
+    },
+    "civil22001": {
+      "registered": false
+    }
+  },
+  "EEE": {
+    "eee21001": {
+      "registered": false
+    },
+    "eee21002": {
+      "registered": false
+    },
+    "eee21003": {
+      "registered": true
+    },
+    "eee22001": {
+      "registered": false
+    }
+  }
+}
