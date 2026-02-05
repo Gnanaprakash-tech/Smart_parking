@@ -1,0 +1,87 @@
+/* Reuse login.css styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body {
+  background: linear-gradient(-45deg, #74ebd5, #acb6e5, #ff9a9e, #fad0c4);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+body {
+  background-image: url("gce.jpeg");  /* path to your image */
+  background-size: cover;       /* fills screen */
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional */
+
+  animation: gradientBG 70s ease infinite;
+}
+
+.login-container {
+  background-color: rgb(255, 255, 255/ 0.005); /* lower opacity */
+  padding: 10px; /* reduced padding = less height */
+  border-radius: 10px;
+  width: 250px;
+  min-height: 5px; /* control height */
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+
+.login-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.login-container input, .login-container select{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 75%;
+  padding: 7px;
+  background-color:#e865cc;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-container button:hover {
+  background-color: #a0459e;
+}
+
+.login-container a {
+  text-decoration: none;
+  color: #cc67d9;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
