@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forgot Password</title>
+
+  <!-- CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #74ebd5, #acb6e5, #ff9a9e, #fad0c4);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 10px;
+      width: 700px;
+      max-height: 1000px;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .container h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .container input {
+      width: 90%;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 28px;
+    }
+
+    .container button {
+      width: 90%;
+      padding: 20px;
+      background-color: #e865cc;
+      border: none;
+      color: white;
+      font-size: 28px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .container button:hover {
+      background-color: #a0459e;
+    }
+
+    .login-link {
+      display: block;
+      margin-top: 15px;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      color: #e96ed2;
+    }
+
+    .login-link:hover {
+      text-decoration: underline;
+    }
+
+    #msg {
+      margin-top: 15px;
+      font-size: 16px;
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .success {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Forgot Password</h1>
+    <input type="email" id="resetEmail" placeholder="Enter your email"><br>
+    <button onclick="resetPassword()">Reset Password</button><br><br>
+    <a href="index.html" class="login-link">Login here</a>
+    <p id="msg"></p>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    async function resetPassword() {
+      const email = document.getElementById("resetEmail").value.trim();
+      const msg = document.getElementById("msg");
+
+      // Clear previous messages
+      msg.innerText = "";
+      msg.className = "";
+
+      // Validation
+      if (!email) {
+        msg.innerText = "Please enter your email";
+        msg.className = "error";
+        return;
+      }
+
+      try {
+        const response = await fetch("http://localhost:5006/auth/forgot-password", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          msg.innerText = data.message || "Failed to send reset link";
+          msg.className = "error";
+          return;
+        }
+
+        msg.innerText = data.message || "Password reset link sent successfully!";
+        msg.className = "success";
+
+      } catch (error) {
+        console.error(error);
+        msg.innerText = "Server error. Please try again later.";
+        msg.className = "error";
+      }
+    }
+  </script>
+
+</body>
+</html>

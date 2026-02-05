@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking - Signup</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Signup</h2>
+    <form id="signup-form">
+      
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <input type="password" id="confirm" placeholder="Confirm Password" required><br>
+      <select id="role" onchange="toggleStaffId()">
+           
+      <option value="student">Student</option>
+      <option value="staff">Staff</option>
+       </select>
+
+<input type="text" id="userid" placeholder="Enter Staff ID" style="display:none;">
+<button type="button" onclick="signup()">Signup</button>
+      
+    </form>
+    <p style="font-size: 14px;">
+  <a href="forget.html">Forgot Password?</a>
+</p>
+    <p>Already have an account? <a href="index.html"><br>Login here</a></p>
+  
+    <p id="error-msg" class="error"></p>
+
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
