@@ -1,0 +1,113 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Parking System</title>
+  <link rel="stylesheet" href="slots.css">
+</head>
+<body>
+
+  <h1 class="title">Smart Parking System</h1>
+
+  <div class="status-bar">
+    Total Slots: <span id="total-slots">0</span>
+    &nbsp; | &nbsp;
+    Available: <span id="available-slots">0</span>
+    &nbsp; | &nbsp;
+    Reserved: <span id="reserved-slots">0</span>
+    &nbsp; | &nbsp;
+    Occupied Slots: <span id="occupied-slots">0</span>
+  </div>
+
+  <div class="exit-label">↑ EXIT</div>
+<!-- Parking Location Map -->
+<div class="map-container">
+  <h3>📍 Parking Location</h3>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3377.5696115347373!2d78.1977411!3d12.131849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac1683ebd40403%3A0x3efa8645b703d621!2sGovernment%20College%20Of%20Engineering%2C%20Dharmapuri!5e1!3m2!1sen!2sin!4v1770139246191!5m2!1sen!2sin"
+    width="100%"
+    height="250"
+    style="border:0; border-radius:10px;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+  <!-- ✅ REQUIRED -->
+  <div id="parkingLot" class="parking-lot"></div>
+
+  <div class="entry-label">↑ ENTRY</div>
+
+  <div id="loading" class="loading hidden">
+    ⏳ Reserving slot...
+  </div>
+
+  <button class="reserve-main-btn" onclick="reserveSelectedSlot()">
+    Reserve Selected Slot
+  </button>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+  <!-- ✅ SCRIPT MUST BE LAST -->
+  <script src="slots.js"></script>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Parking System</title>
+  <link rel="stylesheet" href="slots.css">
+</head>
+<body>
+
+  <h1 class="title">Smart Parking System</h1>
+
+  <div class="status-bar">
+    Total Slots: <span id="total-slots">0</span>
+    &nbsp; | &nbsp;
+    Available: <span id="available-slots">0</span>
+    &nbsp; | &nbsp;
+    Reserved: <span id="reserved-slots">0</span>
+    &nbsp; | &nbsp;
+    Occupied Slots: <span id="occupied-slots">0</span>
+  </div>
+
+  <div class="exit-label">↑ EXIT</div>
+<!-- Parking Location Map -->
+<div class="map-container">
+  <h3>📍 Parking Location</h3>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3377.5696115347373!2d78.1977411!3d12.131849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac1683ebd40403%3A0x3efa8645b703d621!2sGovernment%20College%20Of%20Engineering%2C%20Dharmapuri!5e1!3m2!1sen!2sin!4v1770139246191!5m2!1sen!2sin"
+    width="100%"
+    height="250"
+    style="border:0; border-radius:10px;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+  <!-- ✅ REQUIRED -->
+  <div id="parkingLot" class="parking-lot"></div>
+
+  <div class="entry-label">↑ ENTRY</div>
+
+  <div id="loading" class="loading hidden">
+    ⏳ Reserving slot...
+  </div>
+
+  <button class="reserve-main-btn" onclick="reserveSelectedSlot()">
+    Reserve Selected Slot
+  </button>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+  <!-- ✅ SCRIPT MUST BE LAST -->
+  <script src="slots.js"></script>
+
+</body>
+</html>
+>>>>>>> c3bac08b90a192fd17a0016583fdb57a8e576594
